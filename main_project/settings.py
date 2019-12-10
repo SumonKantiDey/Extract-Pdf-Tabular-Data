@@ -26,9 +26,9 @@ EMAIL_HOST = 'outlook.office365.com'
 EMAIL_PORT = 587  # double check the settings in your outlook mailbox and make sure the port number is correct
 
 # don't include the @blah.com part! I have made this stupid mistakes before
-EMAIL_HOST_USER = 'bluescheme.mailbox@epic-gas.com'
+EMAIL_HOST_USER = 'yourmail'
 
-EMAIL_HOST_PASSWORD = 'NFm$3rJ8ocp4%HzA'
+EMAIL_HOST_PASSWORD = '#######'
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
