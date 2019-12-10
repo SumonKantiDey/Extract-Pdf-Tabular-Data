@@ -1,4 +1,4 @@
-#python manage.py populate_bank
+#python manage.py populate_text_extract
 from django.core.management.base import BaseCommand
 from text_extraction.models import *
 from datetime import datetime
@@ -13,7 +13,7 @@ import re
 def read_data():
     detach_dir = './media/pdf/' #where the pdf content will save
     m = imaplib.IMAP4_SSL("outlook.office365.com")
-    m.login('bluescheme.mailbox@epic-gas.com','NFm$3rJ8ocp4%HzA')
+    m.login('yourmail.com','######')
     m.select("inbox")
 
     resp, items = m.search(None, 'UNSEEN') #ALL
@@ -31,7 +31,7 @@ def read_data():
         #extract the exect mail
         re_mail = re.search("<.*>",mail["From"])
         re_mail = re_mail.group(0)[1:-1]
-        if re_mail  == 'gas@clarksons.com' :
+        if re_mail  == 'yourmail@clarksons.com' :
             broker_add = UserEmail.objects.get_or_create(title = mail["Subject"], email = re_mail)[0]
             broker_add.save()
             print("Brokers Email Address : ",re_mail)
