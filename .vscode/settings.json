@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "C:\\Users\\sumon\\Anaconda3\\envs\\tensorflow\\python.exe",
+    "python.formatting.provider": "autopep8",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+}

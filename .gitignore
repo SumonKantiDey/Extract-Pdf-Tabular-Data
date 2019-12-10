@@ -1,0 +1,9 @@
+__pycache__
+.idea
+.json
+*.sqlite3
+media/
+# virtualenv
+textextraction/
+Pipfile
+Pipfile.lock
