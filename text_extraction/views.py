@@ -793,6 +793,7 @@ def login(request,**kwargs):
                 break
 
         dic['permission'] = group_dic
+	dic['isAdmin'] = user.is_superuser
         return JsonResponse(dic, status=status.HTTP_200_OK)
     return JsonResponse({'error': 'User not found'}, status=status.HTTP_403_FORBIDDEN)
 
