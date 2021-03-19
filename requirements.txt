@@ -6,7 +6,7 @@ dateparser==0.7.1
 Django==2.2.3
 django-cors-headers==3.0.2
 django-pandas==0.6.1
-djangorestframework==3.10.2
+djangorestframework==3.11.2
 djangorestframework-simplejwt==4.3.0
 idna==2.8
 lxml==4.4.0
